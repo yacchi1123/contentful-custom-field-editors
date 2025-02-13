@@ -3,7 +3,6 @@ import * as React from 'react';
 import { Menu, Button } from '@contentful/f36-components';
 import { ChevronDownIcon } from '@contentful/f36-icons';
 import tokens from '@contentful/f36-tokens';
-import { BLOCKS } from '@contentful/rich-text-types';
 import { css, cx } from 'emotion';
 
 import { useContentfulEditor } from '../../../ContentfulEditorProvider';
@@ -16,6 +15,7 @@ import {
 import { isNodeTypeEnabled } from '../../../helpers/validations';
 import { Element } from '../../../internal/types';
 import { useSdkContext } from '../../../SdkProvider';
+import { BLOCKS } from '../../../types/blocks';
 
 const styles = {
   // prevent the layout to jump due switch from "normal text" to "headline" and vice versa
@@ -48,6 +48,9 @@ const styles = {
     [BLOCKS.HEADING_6]: css`
       font-size: 0.875rem;
     `,
+    [BLOCKS.MARKER]: css`
+      font-size: 0.875rem;
+    `,
   },
 };
 
@@ -59,6 +62,7 @@ const LABELS = {
   [BLOCKS.HEADING_4]: 'Heading 4',
   [BLOCKS.HEADING_5]: 'Heading 5',
   [BLOCKS.HEADING_6]: 'Heading 6',
+  [BLOCKS.MARKER]: 'Marker',
 };
 
 export interface ToolbarHeadingButtonProps {
