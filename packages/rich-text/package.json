@@ -1,5 +1,5 @@
 {
-  "name": "@contentful/field-editor-rich-text",
+  "name": "@yacchi1123/field-editor-rich-text",
   "version": "4.3.0",
   "source": "./src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -16,7 +16,7 @@
   "files": [
     "dist"
   ],
-  "author": "Contentful GmbH",
+  "author": "Yuma Yamasaka",
   "license": "MIT",
   "repository": {
     "type": "git",
