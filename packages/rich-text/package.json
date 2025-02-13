@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/contentful/field-editors"
+    "url": "https://github.com/yacchi1123/contentful-custom-field-editors"
   },
   "scripts": {
     "watch": "yarn concurrently \"yarn:watch:*\"",
